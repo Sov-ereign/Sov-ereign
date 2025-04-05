@@ -48,9 +48,6 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
 
-**Currently Exploring:**  
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-%F0%9F%94%91-blueviolet)
-![AI & ML](https://img.shields.io/badge/AI_&_ML-%F0%9F%96%A5%EF%B8%8F-brightgreen)
 
 
 
