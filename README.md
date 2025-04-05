@@ -21,6 +21,17 @@
 | PresentX | AI-powered PPT Generator | [Repo](https://github.com/Sov-ereign/PresentX) |
 | Mastermind | A discord games bot for many varieties of games | [Repo](https://github.com/Sov-ereign/Mastermind) |
 
+## 🧠 Tech Experience (Real Talk)
+
+- Python: Can build cool stuff with ChatGPT’s help 🔁
+- C: Learned basics, still exploring 👶
+- HTML/CSS: Know enough to build basic web stuff 🧱
+- JavaScript: Learning, but can tweak code 🌱
+- Git & GitHub: Using it for all my projects ✅
+- Linux: Comfortable with basic terminal and tools 🐧
+- Android Studio: Learning for app development 📱
+
+
 ---
 
 > _"Learn. Build. Dominate."_ 🚀
