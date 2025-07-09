@@ -3,7 +3,7 @@ name: Update README
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
-  workflow_dispatch:     # Manual trigger
+  workflow_dispatch:
 
 jobs:
   update-readme:
@@ -25,9 +25,7 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: node generate-readme.js
 
-      - name: Commit and push changes  # 💡 Fixed indentation here
-        env:
-          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+      - name: Commit and push changes
         run: |
           git config --global user.name 'Sov-Auto-Bot'
           git config --global user.email 'sovbot@example.com'
@@ -35,3 +33,5 @@ jobs:
           git add README.md
           git commit -m "🔄 auto: updated latest repos" || echo "No changes to commit"
           git push origin main
+        env:
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
