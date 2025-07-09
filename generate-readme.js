@@ -2,7 +2,7 @@ const fs = require("fs");
 const fetch = require("node-fetch");
 
 const GITHUB_USERNAME = "Sov-ereign";
-const TOKEN = process.env.GITHUB_TOKEN;
+const TOKEN = process.env.PERSONAL_TOKEN; // ✅ Use PERSONAL_TOKEN not GITHUB_TOKEN
 
 const query = `
 {
@@ -29,6 +29,16 @@ async function fetchLatestRepos() {
   });
 
   const result = await response.json();
+
+  // 💥 Show full response for debugging
+  console.log("📦 Full GraphQL Response:");
+  console.log(JSON.stringify(result, null, 2));
+
+  if (result.errors) {
+    console.error("❌ GraphQL Error:", JSON.stringify(result.errors, null, 2));
+    process.exit(1); // stop execution on error
+  }
+
   return result.data.user.repositories.nodes;
 }
 
@@ -49,6 +59,7 @@ async function updateReadme() {
   );
 
   fs.writeFileSync("README.md", newReadme);
+  console.log("✅ README.md updated with latest repos.");
 }
 
 updateReadme();
