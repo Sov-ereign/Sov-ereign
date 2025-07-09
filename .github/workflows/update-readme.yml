@@ -37,4 +37,5 @@ jobs:
           
           git add README.md
           git commit -m "🔄 auto: updated latest repos" || echo "No changes to commit"
+          git pull --rebase origin main
           git push origin main
