@@ -6,7 +6,7 @@ const TOKEN = process.env.GITHUB_TOKEN;
 
 const query = `
 {
-  user(login: "${GITHUB_USERNAME}") {
+  user(login: "${GITHUB_Sov-ereign}") {
     repositories(first: 5, orderBy: {field: CREATED_AT, direction: DESC}, privacy: PUBLIC) {
       nodes {
         name
