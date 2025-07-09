@@ -25,7 +25,7 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: node generate-readme.js
 
-            - name: Commit and push changes
+       - name: Commit and push changes
         env:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: |
