@@ -1,59 +1,54 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
 
-const username = "Sov-ereign";
-const token = process.env.PERSONAL_TOKEN;
+const GITHUB_USERNAME = "Sov-ereign";
+const TOKEN = process.env.GITHUB_TOKEN;
 
-const headers = {
-  Authorization: `token ${token}`,
-  "User-Agent": "update-readme-script",
-};
+const query = `
+{
+  user(login: "${GITHUB_USERNAME}") {
+    repositories(first: 5, orderBy: {field: CREATED_AT, direction: DESC}, privacy: PUBLIC) {
+      nodes {
+        name
+        description
+        url
+      }
+    }
+  }
+}
+`;
 
-async function getRepos() {
-  const res = await fetch(`https://api.github.com/users/${username}/repos?per_page=100&type=owner&sort=updated`, {
-    headers,
+async function fetchLatestRepos() {
+  const response = await fetch("https://api.github.com/graphql", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${TOKEN}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ query }),
   });
 
-  if (!res.ok) {
-    console.error(`Failed to fetch repos: ${res.statusText}`);
-    process.exit(1);
-  }
-
-  const data = await res.json();
-
-  return data
-    .filter(repo => !repo.fork) // Skip forks
-    .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+  const result = await response.json();
+  return result.data.user.repositories.nodes;
 }
 
-function generateMarkdown(repos) {
-  const topRepos = repos.slice(0, 6); // Change to show more or less
-  const lines = [];
+async function updateReadme() {
+  const repos = await fetchLatestRepos();
+  const readmeTemplate = fs.readFileSync("README-template.md", "utf-8");
 
-  lines.push(`# 👋 Hello, I'm Somenath Gorai (Sov)`);
-  lines.push(`**🚀 Tech Enthusiast | 💻 Software Developer | 🛡️ Cybersecurity Explorer**`);
-  lines.push(`\n## 📌 Latest Projects\n`);
+  const repoList = repos
+    .map(
+      (repo) =>
+        `- [${repo.name}](${repo.url}): ${repo.description || "No description"}`
+    )
+    .join("\n");
 
-  for (const repo of topRepos) {
-    lines.push(`- [${repo.name}](${repo.html_url}) — _${repo.description || "No description"}_`);
-  }
+  const newReadme = readmeTemplate.replace(
+    /<!--LATEST_REPOS_START-->([\s\S]*?)<!--LATEST_REPOS_END-->/,
+    `<!--LATEST_REPOS_START-->\n${repoList}\n<!--LATEST_REPOS_END-->`
+  );
 
-  lines.push(`\n---`);
-  lines.push(`_Updated automatically every day with love 💙 by GitHub Actions_`);
-
-  return lines.join("\n");
+  fs.writeFileSync("README.md", newReadme);
 }
 
-async function main() {
-  try {
-    const repos = await getRepos();
-    const markdown = generateMarkdown(repos);
-    fs.writeFileSync("README.md", markdown);
-    console.log("README.md updated!");
-  } catch (err) {
-    console.error("Error updating README:", err);
-    process.exit(1);
-  }
-}
-
-main();
+updateReadme();
