@@ -70,11 +70,17 @@ Email Me 👉 ✉️ **somu8608@gmail.com** For Collaboration/Project or Anythin
 
 ## 🆕 Latest Repositories  
 <!--LATEST_REPOS_START-->
-- [FUTURE_FS_02](https://github.com/Sov-ereign/FUTURE_FS_02): No description
-- [FUTURE_FS_01](https://github.com/Sov-ereign/FUTURE_FS_01): No description
-- [NewsHub-AI](https://github.com/Sov-ereign/NewsHub-AI): No description
-- [QuizMaster](https://github.com/Sov-ereign/QuizMaster): No description
-- [Sudoku](https://github.com/Sov-ereign/Sudoku): No description
+```diff
+🆕 Latest Repositories (Auto-Updated)
+```
+
+| Icon | Repo | Description | ⭐ Stars | 🍴 Forks | 🖍️ Language |
+|------|------|-------------|---------|----------|--------------|
+| 📁 | [FUTURE_FS_02](https://github.com/Sov-ereign/FUTURE_FS_02) | _No description_ | 0 | 0 | <span style="color:#663399">CSS</span> |
+| 📁 | [FUTURE_FS_01](https://github.com/Sov-ereign/FUTURE_FS_01) | _No description_ | 0 | 0 | <span style="color:#f1e05a">JavaScript</span> |
+| 🤖 | [NewsHub-AI](https://github.com/Sov-ereign/NewsHub-AI) | _No description_ | 0 | 0 | <span style="color:#3178c6">TypeScript</span> |
+| 🎮 | [QuizMaster](https://github.com/Sov-ereign/QuizMaster) | _No description_ | 0 | 0 | <span style="color:#f1e05a">JavaScript</span> |
+| 🧩 | [Sudoku](https://github.com/Sov-ereign/Sudoku) | _No description_ | 0 | 1 | <span style="color:#f1e05a">JavaScript</span> |
 <!--LATEST_REPOS_END-->
 
 ---
@@ -94,7 +100,9 @@ Email Me 👉 ✉️ **somu8608@gmail.com** For Collaboration/Project or Anythin
 [![](https://visitcount.itsvg.in/api?id=Flash019&icon=9&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-
+## 🆕 Latest Repositories  
+<!--LATEST_REPOS_START-->
+<!--LATEST_REPOS_END-->
 
 ---
 
