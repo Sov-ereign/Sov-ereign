@@ -41,9 +41,9 @@ Email Me 👉 ✉️ **somu8608@gmail.com** For Collaboration/Project or Anythin
 |------|------|-------------|---------|----------|--------------|
 | 📁 | [FUTURE_FS_02](https://github.com/Sov-ereign/FUTURE_FS_02) | _No description_ | 1 | 0 | <span style="color:#3178c6">TypeScript</span> |
 | 📁 | [StackIt-A-Minimal-Q-A-Forum-Platform-](https://github.com/Sov-ereign/StackIt-A-Minimal-Q-A-Forum-Platform-) | _No description_ | 1 | 0 | <span style="color:#3178c6">TypeScript</span> |
+| 📁 | [FUTURE_FS_03](https://github.com/Sov-ereign/FUTURE_FS_03) | A modern, responsive Netflix-inspired streaming platform built with Next.js, Firebase Authentication, and Tailwind CSS. Features secure login/register, movie and TV show browsing, personal lists, and a sleek, mobile-friendly UI. Developed as Task 3 of the Future Interns Full Stack Intern Program. | 0 | 0 | <span style="color:#3178c6">TypeScript</span> |
 | 📁 | [FUTURE_FS_01](https://github.com/Sov-ereign/FUTURE_FS_01) | _No description_ | 1 | 0 | <span style="color:#f1e05a">JavaScript</span> |
 | 🤖 | [NewsHub-AI](https://github.com/Sov-ereign/NewsHub-AI) | _No description_ | 0 | 0 | <span style="color:#3178c6">TypeScript</span> |
-| 🎮 | [QuizMaster](https://github.com/Sov-ereign/QuizMaster) | _No description_ | 0 | 0 | <span style="color:#f1e05a">JavaScript</span> |
 <!--LATEST_REPOS_END-->
 
 ---
