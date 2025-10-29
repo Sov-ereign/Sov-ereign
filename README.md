@@ -39,7 +39,7 @@ Email Me 👉 ✉️ **somu8608@gmail.com** For Collaboration/Project or Anythin
 
 | Icon | Repo | Description | ⭐ Stars | 🍴 Forks | 🖍️ Language |
 |------|------|-------------|---------|----------|--------------|
-| 🤖 | [Neuravos-X-Brainware-University](https://github.com/Sov-ereign/Neuravos-X-Brainware-University) | AI-powered platform with Orato-AI (presentation analysis), Campus-AI (intelligent assistant), and Scam Detector (QR/fraud detection). Features body language analysis, confidence scoring, and real-time processing using React, TensorFlow, and MediaPipe. | 2 | 2 | <span style="color:#3178c6">TypeScript</span> |
+| 🤖 | [Neuravos-X-Brainware-University](https://github.com/Sov-ereign/Neuravos-X-Brainware-University) | AI-powered platform with Orato-AI (presentation analysis), Campus-AI (intelligent assistant), and Scam Detector (QR/fraud detection). Features body language analysis, confidence scoring, and real-time processing using React, TensorFlow, and MediaPipe. | 3 | 2 | <span style="color:#3178c6">TypeScript</span> |
 | 📁 | [GlobeTrotter-Personalized-Travel-Planning-ODOO-](https://github.com/Sov-ereign/GlobeTrotter-Personalized-Travel-Planning-ODOO-) | https://youtu.be/2KFSCEikXnA | 1 | 0 | <span style="color:#3178c6">TypeScript</span> |
 | 📁 | [Agrova](https://github.com/Sov-ereign/Agrova) | 🌱 Building Agrova - AI-powered crop yield prediction system | React + FastAPI + ML | Team Apexars | Hackathon Champions �� | 1 | 2 | <span style="color:#DA5B0B">Jupyter Notebook</span> |
 | 📁 | [FUTURE_FS_02](https://github.com/Sov-ereign/FUTURE_FS_02) | _No description_ | 1 | 0 | <span style="color:#3178c6">TypeScript</span> |
