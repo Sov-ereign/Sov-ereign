@@ -3,6 +3,8 @@
 
 Email Me 👉 ✉️ **somu8608@gmail.com** For Collaboration/Project or Anything Else. 😊😊
 
+![](https://komarev.com/ghpvc/?username=sov-ereign&color=brightgreen)
+
 - 🔭 **I’m currently working on:** AcuteType AI Keyboard  and NeuroVos  
 - 🛡️ **Exploring:** Ethical Hacking & Kali Linux  
 - 📱 **Learning:** Android Dev, AI Integration, Video Analysis  
